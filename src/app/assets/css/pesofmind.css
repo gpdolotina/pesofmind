@@ -1,0 +1,98 @@
+.navbar-collapse
+{
+	background-color: #040404;
+  color: #d2d0d0;
+}
+.navbar-brand
+{
+	background-color: #040404;
+  color: #d2d0d0;
+}
+.navbar, .navbar.navbar-default
+{
+	background-color: #040404;
+  color: #d2d0d0;
+}
+.navbar.navbar-inverse
+{
+  background-color: #040404;
+  color: #d2d0d0;
+}
+
+html
+{
+  position: relative;
+  min-height: 100%;
+}
+body
+{
+  background-color: #6e6e6e;
+  margin-bottom: 60px;
+}
+a
+{
+  text-decoration: none;
+  color: #d2d0d0; 
+}
+#link-hover{
+  text-decoration: none;
+  color: #d2d0d0; 
+}
+#link-hover:hover
+{
+  text-decoration: none;
+  color: white; 
+  cursor:pointer;
+}
+#site-buttons{
+  margin-top: 5px;
+}
+#box-shadow {
+  box-shadow: -1px 0px 0px grey;
+}
+#dropdown-hover:hover
+{
+  text-decoration: none;
+  background-color: #6e6e6e;
+  color: white; 
+  cursor:pointer;
+}
+.footer
+{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #040404;
+}
+.text-muted
+{
+	color: white;
+}
+.carousel-control
+{
+  padding-top:10%;
+  width:5%;
+}
+
+@media only screen and (max-width: 320px) {
+    #logobanner {
+        width: 250px;
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    #logobanner {
+        width: 250px;
+        height: 50px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    
+    #logobanner {
+        width: 250px;
+        height: 50px;
+
+    }
+}
