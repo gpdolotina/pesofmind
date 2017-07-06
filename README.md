@@ -1,107 +1,89 @@
-#PesOf Mind
+#₱esOf Mind
 ===========
 
-Simple parallax scrolling effect inspired by [Spotify.com](http://spotify.com/) implemented as a jQuery plugin  
-[http://pixelcog.com/parallax.js/](http://pixelcog.com/parallax.js/)
-
-## Installation
-
-Download package or install with Bower and include `parallax.min.js` in your document after including jQuery.
-
-```bash
-$ bower i --save parallax.js
-```
-
-```html
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="/path/to/parallax.min.js"></script>
-```
+A RESTful API sample using NodeJS, ReactJS, JQuery, Bootstrap, HTML, CSS
 
 
-# Project Title
-
-One Paragraph of project description goes here
 
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
+
+
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Download the following applications using the links attached:
 
-```
-Give examples
-```
+*GIT at ['Google Drive/GIT'](https://drive.google.com/open?id=0B80qlMS0ABYtYmJqSkJJOUhIZjA)
+*NodeJS at ['Google Drive/NodeJS'](https://drive.google.com/open?id=0B80qlMS0ABYtQllJcWZaS0MtQnc)
 
-### Installing
 
-A step by step series of examples that tell you have to get a development env running
 
-Say what the step will be
+## Installation
 
-```
-Give the example
-```
+1. After you installed GIT and NodeJS, Create a folder where you want the repository "₱esOf Mind" to be cloned.
 
-And repeat
+2. GIT Bash to the created folder and clone the repository ₱esOf Mind. This is the link of the repository.
+[Click here](https://github.com/gpolotina/pesofmind)
 
-```
-until finished
+Click Clone or Download, Copy the link, and Paste it after "git clone".
+
+```bash
+$ git clone https://github.com/gpolotina/pesofmind.git
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+Once you've finished cloning the repository, you will now have "/<'your folder'>/pesofmind".
 
-## Running the tests
+3. Go to pesofmind folder.
 
-Explain how to run the automated tests for this system
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
+```bash
+$ cd pesofmind
 ```
 
-### And coding style tests
+4. Next, install the needed "node_modules" using npm (Node Package Manager)
 
-Explain what these tests test and why
-
-```
-Give an example
+```bash
+$ npm install
 ```
 
-## Deployment
+*If you encounter some ERRORS, manually install it using these codes.*
 
-Add additional notes about how to deploy this on a live system
+```bash
+$ npm run installWebpack
+```
 
-## Built With
+```bash
+$ npm run installReact
+```
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+```bash
+$ npm run installBabelPlugins
+```
 
-## Contributing
+```bash
+$ npm run installBabelPresets
+```
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+5. After installing the needed "node_modules", type this code.
 
-## Versioning
+```bash
+$ npm run start
+```
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+and then open "/<'your folder'>/pesofmind/src/app/index.html" using your web browser.
 
-## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+## Author
 
-## License
+**Gian Paolo A. Dolotina**
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+* To the resources I used.
+* Raphael Landas & Franz Labad for pushing me to learn and expand my knowledge.
+* etc.

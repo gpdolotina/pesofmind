@@ -15,11 +15,14 @@
     "babel-preset-stage-0": "^6.24.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "webpack": "^3.0.0",
-    "webpack-dev-server": "^2.5.0"
+    "webpack": "^3.0.0"
   },
   "scripts": {
-    "start": "./node_modules/.bin/webpack-dev-server --content-base src --inline --hot",
+    "installBabelPlugins": "npm install --save babel-core babel-loader babel-plugin-add-module-exports babel-plugin-react-html-attrs babel-plugin-transform-class-properties babel-plugin-transform-decorators-legacy",
+    "installBabelPresets": "npm install --save babel-preset-es2015 babel-preset-react babel-preset-stage-0",
+    "installReact": "npm install --save react react-dom",
+    "installWebpack": "npm install --save webpack",
+    "start": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Gian Paolo A. Dolotina",
