@@ -38,7 +38,7 @@
 		                  	<span class="icon-bar"></span>
 		                  	<span class="icon-bar"></span>
 		                </button>
-		                <a class="navbar-brand" href="#">
+		                <a class="navbar-brand" href="">
 		                	<img class="img-responsive" style="margin-top:-10px; margin-left: 30px;" src="../src/app/assets/img/logo.png"></img>
 		                </a>
 		              </div>
@@ -47,11 +47,11 @@
 
 		                <ul class="nav navbar-nav navbar-right">
 
-		                    <li><a id="link-hover" href=""><i class="fa fa-home"></i> Home </a></li>
-		                    <li><a id="link-hover" href=""><i class="fa fa-info-circle"></i> About </a></li>
-		                    <li><a id="link-hover" href=""><i class="fa fa-phone"></i> Contact Us </a></li>
-		                    <li><a id="link-hover" href=""><i class="fa fa-file-text-o"></i> Sign Up </a></li>
-		                    <li><a id="link-hover" href=""><i class="fa fa-lock"></i> Login </a></li>
+		                    <li><a id="link-hover" href="#"><i class="fa fa-home"></i> Home </a></li>
+		                    <li><a id="link-hover" href="#"><i class="fa fa-info-circle"></i> About </a></li>
+		                    <li><a id="link-hover" href="#"><i class="fa fa-phone"></i> Contact Us </a></li>
+		                    <li class="show_signup" id="nav-link-hover"><i class="fa fa-file-text-o"></i> Sign Up </a></li>
+		                    <li class="show_login" id="nav-link-hover"><i class="fa fa-lock"></i> Login </a></li>
 		                			                    
 		                </ul>
 		              </div>
@@ -60,10 +60,68 @@
 			</div>
 		</div>
 
-		<!-- Parallax Image -->
-		<div style="height: 500px" class="parallax-container" data-androidFix="true" data-iosFix="true" data-parallax="scroll" data-speed="0.2" data-bleed="10" data-natural-width="1400" data-natural-height="1400" data-image-src="../src/app/assets/img/moneyBG.jpg"></div>
+		<!-- Pop up Login Form -->
+		<center class="row">
+			<div class="col-sm-3"></div>
+			<div id = "loginform" class="col-sm-6">
+				<form method = "post" action = "">
+					<h2>Login Form</h2>
+	    			<div class="form-group">
+					    <label>Username:</label>
+					    <input style="text-align: center;" type="text" class="form-control" id="username" placeholder="Username">
+					</div>
+	    			<div class="form-group">
+					    <label>Password:</label>
+					    <input style="text-align: center;" type="password" class="form-control" id="pwd" placeholder="Password">
+					</div>
+					<button class="btn btn-submit">Submit</button>
+	    			<button class="btn btn-danger close_login">Cancel</button>
+	  			</form>
+	 		</div>
+	 		<div class="col-sm-3"></div>
+		</center>
 
-		<!-- React Client Id -->
+		<!-- Pop up Sign Up Form -->
+		<center class="row">
+			<div class="col-sm-3"></div>
+			<div id = "signupform" class="col-sm-6">
+				<form method = "post" action = "">
+					<h2>Signup Form</h2>
+	    			<div class="form-group">
+					    <label>Username:</label>
+					    <input style="text-align: center;" type="text" class="form-control" id="username" placeholder="Username">
+					</div>
+	    			<div class="form-group">
+					    <label>Password:</label>
+					    <input style="text-align: center;" type="password" class="form-control" id="pwd" placeholder="Password">
+					</div>
+					<div class="form-group">
+					    <label>Re-type Password:</label>
+					    <input style="text-align: center;" type="password" class="form-control" id="pwdRT" placeholder="Re-type Password">
+					</div>
+					<div class="form-group">
+					    <label>E-mail Address:</label>
+					    <input style="text-align: center;" type="e-mail" class="form-control" id="email" placeholder="E-mail">
+					</div>
+					<div class="form-group">
+					    <label>Full Name:</label>
+					    <input style="text-align: center;" type="text" class="form-control" id="pwd" placeholder="Full Name">
+					</div>
+						<button class="btn btn-submit">Submit</button>
+		    			<button class="btn btn-danger close_signup">Cancel</button>
+	  			</form>
+	 		</div>
+	 		<div class="col-sm-3"></div>
+ 		</center>
+
+		<!-- Parallax Image -->
+		<!-- <div style="height: 500px" class="parallax-container" data-androidFix="true" data-iosFix="true" data-parallax="scroll" data-speed="0.2" data-bleed="10" data-natural-width="1400" data-natural-height="1400" data-image-src="../src/app/assets/img/moneyBG.jpg"></div> -->
+
+		<div>
+			<image src="../src/app/assets/img/moneyBG.jpg"></image>
+		</div>
+
+		<!-- ReactJS Client Id -->
 		<div id="client"></div>
 		<script src="app.min.js"></script>
 
@@ -99,6 +157,7 @@
 		</div>
 	</body>
 
+	<!-- Footer -->
 	<footer class="footer">
 		<div class="container" style="text-align: center; margin-top: 10px; color: #d2d0d0;">
 			<div class="col-md-12" style="margin-top: 10px;">
@@ -106,4 +165,72 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- JQuery Script for Login and Signup Forms -->
+	<script>
+
+		$("#loginform").hide();
+		$("#signupform").hide();
+
+		$(document).ready(function()
+		{
+		 	$(".show_login").click(function(){
+		  		$("#loginform").toggle();
+		  		$("#signupform").hide();
+		 	});
+		 	$("#close_login").click(function(){
+		  		$("#loginform").hide();
+		 	});
+
+		 	$(".show_signup").click(function(){
+		  		$("#signupform").toggle();
+		  		$("#loginform").hide();
+		 	});
+		 	$("#close_signup").click(function(){
+		  		$("#signupform").hide();
+		 	});
+		});
+
+		// $(document).ready(function()
+		// {
+		//  	$(".show_login").click(function(){
+		//   		showLogin();
+		//  	});
+		//  	$("#close_login").click(function(){
+		//   		hideLogin();
+		//  	});
+
+		//  	$(".show_signup").click(function(){
+		//   		showSignup();
+		//  	});
+		//  	$("#close_signup").click(function(){
+		//   		hideSignup();
+		//  	});
+		// });
+
+		// function showLogin()
+		// {
+		//  	$("#loginform").fadeIn();
+		//  	$("#loginform").css({"visibility":"visible"});
+		// }
+
+		// function hideLogin()
+		// {
+		//  	$("#loginform").fadeOut();
+		//  	$("#loginform").css({"visibility":"hidden"});
+		// }
+
+		// function showSignup()
+		// {
+		//  	$("#signupform").fadeIn();
+		//  	$("#signupform").css({"visibility":"visible"});
+		// }
+
+		// function hideSignup()
+		// {
+		//  	$("#signupform").fadeOut();
+		//  	$("#signupform").css({"visibility":"hidden"});
+		// }
+		
+	</script>
 </html>
